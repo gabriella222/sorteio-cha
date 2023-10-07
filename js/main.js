@@ -24,12 +24,19 @@ const aItens =[
 
 function random(){
   const randomico = Math.floor(Math.random() * aItens.length);
-  const r  = aItens[randomico];
+  const r  = aItens[randomico];  
+  h1.style.display == 'block'
   h1.innerHTML = r;
+  
+   console.log(h1)
+
 }
 btn.addEventListener('click', ()=>{
-  random();
+  random()
 })
+
 console.log(random())
+
+
 
 
