@@ -2,14 +2,10 @@
 const btn = document.querySelector('.btn');
 const container = document.querySelector('.container');
 const h1 = document.querySelector('.text');
+const p = document.querySelector('.paragraf');
 
 
-const aItens =[
-  'Geladeira',
-  'Fogão',
-  'Armario',
-  'Kit Panela',
-  'Kit LYOR ou WOLF',
+const aItens =['Geladeira','Fogão','Armario','Kit Panela','Kit LYOR ou WOLF',
   'Sofá',
   'Máquina lava e seca',
   'Mesa jantar',
@@ -25,17 +21,15 @@ const aItens =[
 function random(){
   const randomico = Math.floor(Math.random() * aItens.length);
   const r  = aItens[randomico];  
-  h1.style.display == 'block'
   h1.innerHTML = r;
-  
-   console.log(h1)
 
 }
 btn.addEventListener('click', ()=>{
-  random()
+  random();
+   h1.classList.add('displayh1');
+   p.innerHTML = 'Agora é só entregar o presente.';
 })
 
-console.log(random())
 
 
 
